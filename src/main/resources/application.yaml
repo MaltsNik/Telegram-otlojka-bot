@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/telegram-otlojka-bot
+    username: postgres
+    password: postgres
+  liquibase:
+    change-log: db/changelog/db.changelog-master.yaml
+telegram:
+  name: ${MySandyTgBot}
+  token: ${5218377553:AAF4EWIXKAlTz5jiU1QbhrOnjsPZYCfQJro}
+  chatId: ${CHAT_ID}
+  adminId: ${ADMIN_ID}
+
+schedule:
+  postingInterval: 120
